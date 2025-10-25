@@ -4,8 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  // декларативно
   const [count, setCount] = useState(0)
 
+  // императивно
   const date = new Date();
   const year = date.getFullYear();
 
@@ -33,7 +35,7 @@ function App() {
       </p>
       <p>{year}</p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
