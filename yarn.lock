@@ -1707,24 +1707,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minin-react-2025@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "minin-react-2025@workspace:."
-  dependencies:
-    "@eslint/js": "npm:^9.36.0"
-    "@types/react": "npm:^19.1.16"
-    "@types/react-dom": "npm:^19.1.9"
-    "@vitejs/plugin-react": "npm:^5.0.4"
-    eslint: "npm:^9.36.0"
-    eslint-plugin-react-hooks: "npm:^5.2.0"
-    eslint-plugin-react-refresh: "npm:^0.4.22"
-    globals: "npm:^16.4.0"
-    react: "npm:^19.1.1"
-    react-dom: "npm:^19.1.1"
-    vite: "npm:rolldown-vite@7.1.14"
-  languageName: unknown
-  linkType: soft
-
 "minipass-collect@npm:^2.0.1":
   version: 2.0.1
   resolution: "minipass-collect@npm:2.0.1"
@@ -2014,6 +1996,24 @@ __metadata:
   checksum: 10c0/fa2cae05248d01288e91523b590ce4e7635b1e13f1344e225f850d722a8da037bf0782f63b1c1d46353334e0c696909b82e582f8cad607948fde6f7646cc18d9
   languageName: node
   linkType: hard
+
+"react-learn@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "react-learn@workspace:."
+  dependencies:
+    "@eslint/js": "npm:^9.36.0"
+    "@types/react": "npm:^19.1.16"
+    "@types/react-dom": "npm:^19.1.9"
+    "@vitejs/plugin-react": "npm:^5.0.4"
+    eslint: "npm:^9.36.0"
+    eslint-plugin-react-hooks: "npm:^5.2.0"
+    eslint-plugin-react-refresh: "npm:^0.4.22"
+    globals: "npm:^16.4.0"
+    react: "npm:^19.1.1"
+    react-dom: "npm:^19.1.1"
+    vite: "npm:rolldown-vite@7.1.14"
+  languageName: unknown
+  linkType: soft
 
 "react-refresh@npm:^0.18.0":
   version: 0.18.0
