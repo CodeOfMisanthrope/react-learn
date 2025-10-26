@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+      "~components/*": [
+        "src/components/*"
+      ],
+      "~core/*": [
+        "src/core/*"
+      ],
+      "~utils/*": [
+        "src/utils/*"
+      ],
+      "~assets/*": [
+        "assets/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.jsx",
+    "src/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
