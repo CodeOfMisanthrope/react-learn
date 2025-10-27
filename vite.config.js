@@ -11,6 +11,7 @@ export default defineConfig({
     alias: {
       '~': path.resolve(dirname, 'src'),
       '~assets': path.resolve(dirname, 'assets'),
+      '~utils': path.resolve(dirname, 'src', 'utils'),
     }
   }
 })
