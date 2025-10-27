@@ -10,8 +10,9 @@ function App() {
 
   const onInputButtonClick = () => {
     const promptValue = prompt('Введите значение');
-    setIsValueValid((isValid) => validate(promptValue));
-    if (!isValueValid) {
+    const isValid = validate(promptValue);
+    setIsValueValid(isValid);
+    if (!isValid) {
       setError('Строка должна быть более 3 символов');
       return;
     }
@@ -22,7 +23,6 @@ function App() {
   const onAddButtonClick = () => {
     const id = generateId();
     const updatedList = [...list, {id, value}];
-    console.log({id, value})
     setList(updatedList);
     setValue('');
     setError('');
@@ -51,7 +51,7 @@ function App() {
           {list.length === 0 && <p className={styles['noMarginText']}>Нет добавленных элементов</p>}
           <ul className={styles['list']}>
             {/*<li className={styles['listItem']}>Первый элемент</li>*/}
-            {list.map((id, value) =>
+            {list.map(({id, value}) =>
               <li className={styles['listItem']} key={id}>{value}</li>
             )}
           </ul>
