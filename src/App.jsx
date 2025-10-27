@@ -1,6 +1,7 @@
 import {useState} from "react";
 import styles from '~/app.module.css';
 import {generateId} from "~utils/id.js";
+import {convertData} from "~utils/date.js";
 
 function App() {
   const [value, setValue] = useState('');
@@ -22,7 +23,8 @@ function App() {
 
   const onAddButtonClick = () => {
     const id = generateId();
-    const updatedList = [...list, {id, value}];
+    const date = convertData(new Date());
+    const updatedList = [...list, {id, value, date}];
     setList(updatedList);
     setValue('');
     setError('');
@@ -50,9 +52,8 @@ function App() {
           <h2 className={styles['listHeading']}>Список:</h2>
           {list.length === 0 && <p className={styles['noMarginText']}>Нет добавленных элементов</p>}
           <ul className={styles['list']}>
-            {/*<li className={styles['listItem']}>Первый элемент</li>*/}
-            {list.map(({id, value}) =>
-              <li className={styles['listItem']} key={id}>{value}</li>
+            {list.map(({id, value, date}) =>
+              <li className={styles['listItem']} key={id}>{value} - {date}</li>
             )}
           </ul>
         </div>
